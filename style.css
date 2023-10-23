@@ -9,13 +9,13 @@ body{
 }
 
 .main-content{
-    min-height: 118vh;
+    min-height: 100vh;
     width: 70%;
     margin: 2rem auto;
     display: grid;
     grid-template-columns: 2fr 4fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 26px;
+    grid-gap: 18px;
 }
 
 .main-content .left-section{
@@ -24,13 +24,13 @@ body{
     grid-row-end: 3;
 }
 .left-section{
-    /* min-height: 100vh; */
     background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .profile{
     width: 100%;
-    height: 20%;
+    height: 30%;
     overflow: hidden; /* Hide any overflow if the image is larger */
     background-color: #F2EEEF;
     position: relative;
@@ -38,21 +38,22 @@ body{
 
 }
 
-.profile img{
-    max-width: 100%;
+.profile .pro-img{
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .name{
     position: absolute;
-  top: 50%; /* Adjust the top position to center vertically */
-  left: 50%; /* Adjust the left position to center horizontally */
+  top: 90%; /* Adjust the top position to center vertically */
+  right: 45%; /* Adjust the left position to center horizontally */
   transform: translate(-50%, -50%); /* Center the text within the container */
   background-color: rgba(0, 0, 0, 0.5); /* Add a background color for better text visibility */
   color: #fff; /* Set the text color */
   padding: 10px; /* Add padding for better readability */
   font-size: 18px; /* Set the font size */
+  font-weight: bold;
 }
 
 .details ul li{
@@ -146,42 +147,33 @@ body{
     font-size: 13px; 
   }
 
-.skill-details .text1{
+.skill-details .text{
 
     position: absolute;
     top: 2px;
-    left: 140px;
     color: #fff;
     font-size: 13px; 
+
+}
+
+.skill-details .text1{
+    left: 140px;
 
 }
 .skill-details .text2{
 
-    position: absolute;
-    top: 2px;
     left: 138px;
-    color: #fff;
-    font-size: 13px; 
 
 }
 .skill-details .text3{
 
-    position: absolute;
-    top: 2px;
     left: 135px;
-    color: #fff;
-    font-size: 13px; 
 
 }
 
 .skill-details .text4{
 
-    position: absolute;
-    top: 2px;
     left: 130px;
-    color: #fff;
-    font-size: 13px; 
-
 }
 
 .lang-details ul li{
@@ -227,6 +219,7 @@ body{
     background-color: #FFFFFF;
     color: #757575;
     font-size: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .work-head{
@@ -248,7 +241,7 @@ body{
     margin-left: 17px;
 
 }
-.inner-div{
+.company-name{
     font-size: 18px;
     font-weight: bold;
     margin-left: 20px;
@@ -293,9 +286,9 @@ body{
     margin-top: 20px;
 }
 
-.work-exp .exp-last{
-    margin-bottom: 20px;
-}
+/* .work-exp .exp-last{
+    margin-bottom: 10px;
+} */
 
 .education{
     background-color: #FFFFFF;
